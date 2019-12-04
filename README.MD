@@ -55,7 +55,7 @@ Instrucción para actualizar el estado de una tarea
 ```
 node app actualizar -d "Ingresar la tarea a actualizar" 
 ```
-![Alt text](./pictures/actualizar.png "imagen actualizar")
+![Alt text](./pictures/actualizar1.png "imagen actualizar")
 
 
 ![Alt text](./pictures/mostrar-actualizacion.png "imagen mostrar actualizar")
