@@ -74,7 +74,7 @@ node app borrar -d "Ingresar la tarea que deseas borrar"
 ![Alt text](./pictures/mostrar-borrado.png "imagen mostrar actualizar")
 
 
-
+Fin de la descripción
 
 
 
