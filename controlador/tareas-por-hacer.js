@@ -36,19 +36,24 @@ const crear = (descripcion) => {
     return tarea;
 }
 
+
+
+
+
 const getLista = (completado) => {
     // carga los datos del archivo data.json
     cargarDB();
-    //comprueba si los valores no están definidos enviar todas las 
-    //tareas que tienes que hacer
+     // cualquier valor que no sea true o false regresara toda la lista
     let lista_nueva = []
-    if (completado === undefined) {
+
+    if ( completado != 'true' && completado != 'false') {
+       
         return tareasPorHacer
     } 
 
-    // si los valores están definidos comprueba si es verdadero o falso
-    if (completado != undefined) {
+    
 
+    //cambiar de estado segun se ingrese en consola
     if (completado === 'true'){
         estado_t=true
     }else{
@@ -63,11 +68,16 @@ const getLista = (completado) => {
            
             
         }
-    }
+    
     // retornar la lista con tareas completas o incompletas dependiendo 
     //la peticion en consola
     return lista_nueva;
 }
+
+
+
+
+
 
 const actualizar = (descripcion, completado = true) => {
     cargarDB();
